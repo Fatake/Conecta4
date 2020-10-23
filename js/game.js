@@ -1,7 +1,7 @@
 /** Configuraciones */
 var ctx, canvas;
 var tiradas, gameOver;
-var fichas_array;
+var fichas_array; // Arreglo de las fichas
 var TABLERO_NAME = "conecta4Tablero"; // ID del canvas
 
 // Anchos del tablero
@@ -25,9 +25,14 @@ var largo       = 120;
  * Funcion inciar el juego
  */
 function iniciar(){
+    // Optiene el tablero
     canvas        = document.getElementById(TABLERO_NAME);
+
+    //Establece las medidas
     canvas.width  = ancho;
     canvas.height = alto;
+
+    // Si existe el tablero
     if(canvas && canvas.getContext){
         ctx = canvas.getContext("2d");
         if(ctx){
