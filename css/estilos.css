@@ -1,14 +1,22 @@
 #banner, #pie{
-    background-color: coral;
+    background-color: #CBBDE4;
     width: 100%;
     height: 100px;
-    
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: #CBBDE4;
+	font-family: Shojumaru;
 }
 
 #tablero{
     height: 100%;
     
 }
+
 #area{
     height: 400px;
     float: none;

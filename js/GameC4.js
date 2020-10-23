@@ -7,7 +7,7 @@
  * 
  */
 var ctx, canvas;
-const TABLERO_NAME = "conecta4Tablero";// Nombre del Canvas
+const TABLERO_NAME = "TableroGame";// Nombre del Canvas
 
 // Color 
 var colorGato   = "black";
@@ -209,4 +209,19 @@ function selecciona(e){
     canvas.addEventListener("click",selecciona,false);
 }
 
-iniciar();
+/**
+ * Busca la ficha y la retorna 
+ * @param {*} ren Renglon
+ * @param {*} col Columna
+ */
+function buscarFicha(ren,col){
+    for(var i=0; i<fichas_array.length; i++){
+        ficha = fichas_array[i];
+        if(ficha.ren == ren && ficha.col == col){
+            break;
+        }
+    }
+    return ficha;
+}
+
+// iniciar();
